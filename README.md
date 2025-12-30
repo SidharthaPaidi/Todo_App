@@ -63,48 +63,6 @@ A modern, scalable web application with authentication and task management featu
 - **Validation**: express-validator
 - **CORS**: cors middleware
 
-## 📁 Project Structure
-
-```
-primetrade/
-├── backend/
-│   ├── models/
-│   │   ├── User.js           # User schema with password hashing
-│   │   └── Task.js           # Task schema with validation
-│   ├── routes/
-│   │   ├── auth.js           # Authentication routes
-│   │   ├── user.js           # User profile routes
-│   │   └── tasks.js          # Task CRUD routes
-│   ├── middleware/
-│   │   └── auth.js           # JWT authentication middleware
-│   ├── .env                  # Environment variables
-│   ├── server.js             # Express server setup
-│   └── package.json
-│
-├── frontend/
-│   ├── pages/
-│   │   ├── _app.js           # App wrapper with providers
-│   │   ├── index.js          # Landing page
-│   │   ├── login.js          # Login page
-│   │   ├── register.js       # Registration page
-│   │   └── dashboard.js      # Main dashboard
-│   ├── components/
-│   │   └── ProtectedRoute.js # Route protection component
-│   ├── contexts/
-│   │   └── AuthContext.js    # Authentication context
-│   ├── lib/
-│   │   └── api.js            # Axios configuration
-│   ├── styles/
-│   │   └── globals.css       # Global styles
-│   ├── .env.local            # Environment variables
-│   └── package.json
-│
-├── postman/
-│   └── PrimeTrade_API.postman_collection.json
-├── SCALING.md                # Scaling strategy document
-└── README.md                 # This file
-```
-
 ## 🔧 Installation & Setup
 
 ### Prerequisites
@@ -394,5 +352,6 @@ MIT License - feel free to use this project for learning and development.
 ---
 
 For questions or issues, please contact the development team or open an issue in the repository.
-#   T o d o _ A p p  
+#   T o d o _ A p p 
+ 
  
