@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-light_cyan-800 to-sky_aqua-900 text-gray-900;
+  }
+  
+  /* Animated gradient background */
+  @keyframes gradient-shift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 15s ease infinite;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-blue_green-600 to-turquoise_surf-600 text-white px-4 py-2 rounded-lg hover:from-blue_green-700 hover:to-turquoise_surf-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl transform hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply bg-frosted_blue-600 text-deep_twilight-800 px-4 py-2 rounded-lg hover:bg-frosted_blue-700 transition-all duration-300 font-medium shadow-md hover:shadow-lg;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 border-2 border-sky_aqua-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-turquoise_surf-500 focus:border-turquoise_surf-500 bg-white transition-all placeholder-sky_aqua-400;
+  }
+
+  .card {
+    @apply bg-white/95 backdrop-blur-sm rounded-xl shadow-xl p-6 border border-sky_aqua-200 hover:border-turquoise_surf-400 transition-all duration-300;
+  }
+}
